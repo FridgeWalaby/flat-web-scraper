@@ -46,7 +46,6 @@ def send_slack_message(text):
         wekbook_url, data=json.dumps(data), headers={"Content-Type": "application/json"}
     )
 
-
 with requests.Session() as session:
     url = "https://www.stadt-zuerich.ch/login/intertl/auth?RequestedPage=%2fapp%2fmkfewww%2fweb%2fauth%2f"
     res0 = session.get(url)
