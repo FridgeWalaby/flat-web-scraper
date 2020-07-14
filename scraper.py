@@ -124,7 +124,7 @@ with requests.Session() as session:
 
 
 with requests.Session() as session:
-    url = "https://www.homegate.ch/mieten/moebliertes-wohnobjekt/trefferliste?ac=3&ad=3.5&loc=8004%2C8005%2C8006%2CWipkingen%20%5BQuartier%5D%2C8003&ah=1805"
+    url = "https://www.homegate.ch/mieten/wohnung/trefferliste?ac=3&loc=Albisrieden%20%5BQuartier%5D%2CAltstetten%20%5BQuartier%5D%2CWipkingen%20%5BQuartier%5D%2CWiedikon%20%5BQuartier%5D%2CZ%C3%BCrich%20Kreis%201%20%5BStadtteil%5D%2CZ%C3%BCrich%20Kreis%203%20%5BStadtteil%5D%2CZ%C3%BCrich%20Kreis%204%20%5BStadtteil%5D%2CZ%C3%BCrich%20Kreis%205%20%5BStadtteil%5D%2CZ%C3%BCrich%20Kreis%206%20%5BStadtteil%5D%2CH%C3%B6ngg%20%5BQuartier%5D&ah=1705"
     res0 = session.get(url)
 
     soup = BeautifulSoup(res0.content, "html.parser")
